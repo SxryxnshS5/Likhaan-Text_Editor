@@ -127,7 +127,7 @@ namespace Text_Editor {
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            string url = "https://boldinprints.in/";
+            string url = "https://github.com/SxryxnshS5/Likhaan-TextEditor";
 
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
             {

@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{4C083A2F-1640-4408-8622-626F47841C0B}|Text_Editor\\Text_Editor.csproj|solutionrelative:text_editor\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C083A2F-1640-4408-8622-626F47841C0B}|Text_Editor\\Text_Editor.csproj|C:\\Users\\RSIN\\source\\repos\\Likhaan-TextEditor\\text_editor\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4C083A2F-1640-4408-8622-626F47841C0B}|Text_Editor\\Text_Editor.csproj|solutionrelative:text_editor\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4C083A2F-1640-4408-8622-626F47841C0B}|Text_Editor\\Text_Editor.csproj|C:\\Users\\RSIN\\source\\repos\\Likhaan-TextEditor\\text_editor\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C083A2F-1640-4408-8622-626F47841C0B}|Text_Editor\\Text_Editor.csproj|solutionrelative:text_editor\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C083A2F-1640-4408-8622-626F47841C0B}|Text_Editor\\Text_Editor.csproj|C:\\Users\\RSIN\\source\\repos\\Likhaan-TextEditor\\text_editor\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4C083A2F-1640-4408-8622-626F47841C0B}|Text_Editor\\Text_Editor.csproj|solutionrelative:text_editor\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C083A2F-1640-4408-8622-626F47841C0B}|Text_Editor\\Text_Editor.csproj|C:\\Users\\RSIN\\source\\repos\\Likhaan-TextEditor\\text_editor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 27,
+          "SelectedChildIndex": 28,
           "Children": [
             {
               "$type": "Bookmark",
@@ -125,6 +125,10 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Program.cs",
@@ -138,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\RSIN\\source\\repos\\Likhaan-TextEditor\\Text_Editor\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Text_Editor\\Forms\\MainForm.cs",
@@ -150,15 +154,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\RSIN\\source\\repos\\Likhaan-TextEditor\\Text_Editor\\Forms\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "Text_Editor\\Forms\\MainForm.Designer.cs",
               "ToolTip": "C:\\Users\\RSIN\\source\\repos\\Likhaan-TextEditor\\Text_Editor\\Forms\\MainForm.Designer.cs",
               "RelativeToolTip": "Text_Editor\\Forms\\MainForm.Designer.cs",
-              "ViewState": "AQIAAO4AAAAAAAAAAAAawPgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T16:35:09.044Z"
+              "WhenOpened": "2024-08-02T16:35:09.044Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -192,7 +197,7 @@
               "RelativeDocumentMoniker": "Text_Editor\\Forms\\MainForm.cs",
               "ToolTip": "C:\\Users\\RSIN\\source\\repos\\Likhaan-TextEditor\\Text_Editor\\Forms\\MainForm.cs",
               "RelativeToolTip": "Text_Editor\\Forms\\MainForm.cs",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAawIkAAAAFAAAA",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAgwIEAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-01T18:48:58.47Z",
               "EditorCaption": ""
