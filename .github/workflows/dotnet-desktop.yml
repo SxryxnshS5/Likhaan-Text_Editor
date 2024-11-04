@@ -30,7 +30,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Download build artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v3
       with:
         name: LikhaanTextEditor
 
@@ -46,11 +46,11 @@ jobs:
         prerelease: false
 
     - name: Upload build to Release
-      uses: actions/upload-release-asset@v1
+      uses: svenstaro/upload-release-action@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: LikhaanTextEditor.zip
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: ./LikhaanTextEditor.zip
         asset_name: LikhaanTextEditor.zip
-        asset_content_type: application/zip
+        tag: 'v1.0.${{ github.run_number }}'
