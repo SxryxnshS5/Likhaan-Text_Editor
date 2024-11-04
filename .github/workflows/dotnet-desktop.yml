@@ -53,7 +53,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: Text_Editor/bin/Release/Text_Editor.exe  # Specify the full path to your .exe file
+        file: ${{ github.workspace }}\Text_Editor\bin\Release\Text_Editor.exe  # Use full path with workspace variable
         asset_name: LikhaanTextEditor.exe
         tag: 'v1.0.${{ github.run_number }}'
