@@ -51,6 +51,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: Likhaan-Text_Editor/Text_Editor/bin/Release/*.exe  # Upload the main executable file
+        file: Text_Editor/bin/Release/*.exe  # Upload the main executable file
         asset_name: LikhaanTextEditor.exe
         tag: 'v1.0.${{ github.run_number }}'
