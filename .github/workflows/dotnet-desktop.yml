@@ -20,13 +20,13 @@ jobs:
       run: msbuild Text_Editor.sln /p:Configuration=Release
 
     - name: List files in Release directory
-      run: dir Text_Editor\bin\Release
-          
-    - name: Zip published files
+      run: dir "${{ github.workspace }}\Text_Editor\bin\Release"
+
+    - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
         name: LikhaanTextEditor
-        path: Text_Editor/bin/Release  # Ensure this path matches your project's output
+        path: "${{ github.workspace }}\Text_Editor\bin\Release"
           
   release:
     needs: build
@@ -36,6 +36,10 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: LikhaanTextEditor
+        path: "${{ github.workspace }}\Text_Editor\bin\Release"
+
+    - name: List files in downloaded artifact
+      run: dir "${{ github.workspace }}\Text_Editor\bin\Release"
 
     - name: Create a Release
       id: create_release
@@ -53,6 +57,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        file: ${{ github.workspace }}\Text_Editor\bin\Release\Text_Editor.exe  # Use full path with workspace variable
+        file: "${{ github.workspace }}\Text_Editor\bin\Release\Text_Editor.exe"
         asset_name: LikhaanTextEditor.exe
         tag: 'v1.0.${{ github.run_number }}'
