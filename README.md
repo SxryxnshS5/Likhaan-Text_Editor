@@ -1,3 +1,5 @@
+---
+
 # Likhaan Text Editor
 
 Likhaan Text Editor is a lightweight, feature-rich text editing tool developed using Windows Forms in C#. It provides a simple interface for creating, editing, and managing text files, with essential functionalities like printing, searching, undo/redo, and more.
@@ -63,6 +65,20 @@ The project is built using Windows Forms and organized as follows:
 
 ### Search Functionality
 Implemented within the `MainForm` class, the search function allows users to find specific text in the document, using a dialog box to input the search query.
+
+## GitHub Actions Deployment
+
+This project uses GitHub Actions to automate the build and release process:
+
+1. **Builds on Push to Main**: Each push to the `main` branch triggers an automated workflow to build the project.
+2. **Artifact Upload**: After building, the executable is zipped and uploaded as an artifact.
+3. **Automated Releases**: The workflow creates a release draft on GitHub with the latest build, making it available for download.
+
+### Workflow File
+
+The GitHub Actions workflow is defined in `.github/workflows/dotnet-desktop.yml`. It includes the following jobs:
+- **Build**: Checks out the code, builds the solution using MSBuild, and uploads the output as an artifact.
+- **Release**: Downloads the artifact, creates a GitHub release, and attaches the executable.
 
 ## Contributions
 
