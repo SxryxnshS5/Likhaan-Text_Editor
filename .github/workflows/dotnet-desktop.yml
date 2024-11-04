@@ -17,7 +17,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1
 
     - name: Build solution
-      run: msbuild LikhaanTextEditor.sln /p:Configuration=Release
+      run: msbuild Text_Editor.sln /p:Configuration=Release
 
     - name: Zip published files
       uses: actions/upload-artifact@v3
