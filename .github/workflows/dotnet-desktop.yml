@@ -24,7 +24,7 @@ jobs:
       with:
         name: LikhaanTextEditor
         path: Text_Editor/bin/Release  # Ensure this path matches your project's output
-          
+        
   release:
     needs: build
     runs-on: windows-latest
@@ -51,6 +51,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: Text_Editor/bin/Release/*.exe  # Upload the main executable file
+        file: Text_Editor/bin/Release/Text_Editor.exe  # Specify the full path to your .exe file
         asset_name: LikhaanTextEditor.exe
         tag: 'v1.0.${{ github.run_number }}'
