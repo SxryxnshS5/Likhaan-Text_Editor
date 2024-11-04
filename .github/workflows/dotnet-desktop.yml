@@ -19,12 +19,15 @@ jobs:
     - name: Build solution
       run: msbuild Text_Editor.sln /p:Configuration=Release
 
+    - name: List files in Release directory
+      run: dir Text_Editor\bin\Release
+          
     - name: Zip published files
       uses: actions/upload-artifact@v3
       with:
         name: LikhaanTextEditor
         path: Text_Editor/bin/Release  # Ensure this path matches your project's output
-        
+          
   release:
     needs: build
     runs-on: windows-latest
